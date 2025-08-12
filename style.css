@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: #0779e4 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo-img {
+    height: 40px; /* atur tinggi sesuai selera */
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header li {
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #0779e4;
+    color: #fff;
+}
+
+.cta-button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-content img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.friend-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.friend-item {
+    text-align: center;
+}
+
+.friend-item img {
+    width: 155px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .friend-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
